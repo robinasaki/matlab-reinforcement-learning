@@ -5,12 +5,13 @@
 
 %% Make environment
 env = py.gym.make('MountainCar-v0');
-env.reset(); % output the random starting point [xpos, velocity]
+env.reset() % output the random starting point [xpos, velocity]
 
 %% Try arbitary actions
-for i=1:100
+for i=1:1000
     act = int16(randi([0, 2], 1)); % int16() cast matlab int to python int
     env.step(act);
+    env.render()
 end
 
-
+env.close()
