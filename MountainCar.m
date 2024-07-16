@@ -1,7 +1,7 @@
 %% This RL project will focus on the following github repo, https://github.com/openai/gym/blob/master/gym/envs/classic_control/mountain_car.py
 
 %% Update Python env here
-% pyenv('Version', '{INSERT PATH HERE}')
+pyenv('Version', '/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11')
 
 %% Make environment
 env = py.gym.make('MountainCar-v0');
